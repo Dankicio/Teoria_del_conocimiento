@@ -1,0 +1,109 @@
+/* ********** Custom Properties ********** */
+:root {
+  --white-color: #fff;
+  --gray-dark-color: #666;
+  --black-color: #1f1f1f;
+  --link-color: #509ee3;
+  --title-color: #333;
+  --text-color: #222;
+  --font: "Montserrat", sans-serif;
+  --container-sm: 780px;
+  --container-md: 992px;
+}
+/* ********** Reset ******* */
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  transition: all 0.5s ease-out;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6;
+}
+/********** Components *****************/
+/* ******************** Hero Image ******************** */
+
+.hero-image {
+  min-height: 100vh;
+  background-image: var(--image);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-image article {
+  width: 100%;
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white-color);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-image h1 {
+  font-size: 5.5vw;
+}
+/* ******* Utilities ********* */
+.container-sm {
+  margin-right: auto;
+  margin-left: auto;
+  width: var(--container-sm);
+  max-width: 95%;
+  font-size: 1.5rem;
+  margin-top: 6rem;
+}
+.container-md {
+  margin-right: auto;
+  margin-left: auto;
+  width: var(--container-md);
+  max-width: 95%;
+  font-size: 1.5rem;
+  margin-top: 5rem;
+}
+.dark-box {
+  padding: 4rem;
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+.footer {
+  height: 2rem;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  margin-bottom: 0;
+}
+.text-center {
+  text-align: center;
+}
